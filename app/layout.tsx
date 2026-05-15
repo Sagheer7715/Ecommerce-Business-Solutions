@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const inter = Inter({
@@ -46,6 +47,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${sora.variable}`}>
       <body className="min-h-screen bg-ink-950 font-sans text-white antialiased">
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
