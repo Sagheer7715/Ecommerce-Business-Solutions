@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Reveal from "./Reveal";
-import { Mail, Facebook, CheckCircle2, ArrowRight } from "lucide-react";
+import { Mail, Facebook, CheckCircle2, ArrowRight, Phone } from "lucide-react";
 import { site } from "@/lib/site";
 
 const revenueOptions = [
@@ -67,6 +67,21 @@ export default function Contact() {
                     Email
                   </div>
                   <div className="text-sm font-medium">{site.email}</div>
+                </div>
+              </a>
+
+              <a
+                href={`tel:${site.phone}`}
+                className="card-surface flex items-center gap-4 p-4 transition-all hover:-translate-y-0.5"
+              >
+                <span className="grid h-11 w-11 place-items-center rounded-xl bg-brand-gradient text-black shadow-glow">
+                  <Phone className="h-5 w-5" />
+                </span>
+                <div>
+                  <div className="text-xs uppercase tracking-wider text-white/45">
+                    Phone / WhatsApp
+                  </div>
+                  <div className="text-sm font-medium">{site.phoneDisplay}</div>
                 </div>
               </a>
 

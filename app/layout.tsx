@@ -91,7 +91,7 @@ const jsonLd = {
   url: SITE_URL,
   image: `${SITE_URL}/opengraph-image`,
   email: site.email,
-  telephone: "+923160972399",
+  telephone: site.phone,
   sameAs: [site.facebook],
   priceRange: "$$$",
   address: {
