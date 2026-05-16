@@ -16,20 +16,52 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          padding: 72,
-          background:
-            "radial-gradient(circle at 20% 10%, rgba(249,115,22,0.28), transparent 55%), radial-gradient(circle at 85% 95%, rgba(245,158,11,0.18), transparent 55%), #050505",
+          padding: "72px",
+          background: "#050505",
           color: "white",
           fontFamily: "sans-serif",
         }}
       >
+        {/* Atmospheric orange glow — top-left */}
+        <div
+          style={{
+            position: "absolute",
+            top: -160,
+            left: -120,
+            width: 600,
+            height: 600,
+            background:
+              "radial-gradient(circle, rgba(249,115,22,0.35) 0%, rgba(249,115,22,0) 70%)",
+            display: "flex",
+          }}
+        />
+        {/* Atmospheric orange glow — bottom-right */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: -180,
+            right: -160,
+            width: 640,
+            height: 640,
+            background:
+              "radial-gradient(circle, rgba(245,158,11,0.22) 0%, rgba(245,158,11,0) 70%)",
+            display: "flex",
+          }}
+        />
+
         {/* Top bar — brand mark + brand name */}
-        <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 20,
+          }}
+        >
           <div
             style={{
-              width: 64,
-              height: 64,
-              borderRadius: 14,
+              width: 72,
+              height: 72,
+              borderRadius: 16,
               background:
                 "linear-gradient(135deg, #fbbf24 0%, #f97316 55%, #ea580c 100%)",
               display: "flex",
@@ -38,8 +70,8 @@ export default function OpenGraphImage() {
             }}
           >
             <svg
-              width="40"
-              height="40"
+              width="44"
+              height="44"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#000"
@@ -55,7 +87,8 @@ export default function OpenGraphImage() {
           </div>
           <div
             style={{
-              fontSize: 30,
+              display: "flex",
+              fontSize: 34,
               fontWeight: 700,
               letterSpacing: -0.5,
             }}
@@ -64,46 +97,56 @@ export default function OpenGraphImage() {
           </div>
         </div>
 
-        {/* Center — headline */}
-        <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+        {/* Center — headline block */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 28,
+          }}
+        >
           <div
             style={{
-              display: "inline-flex",
+              display: "flex",
               alignSelf: "flex-start",
-              padding: "8px 18px",
+              padding: "10px 22px",
               borderRadius: 999,
               border: "1px solid rgba(249,115,22,0.4)",
               background: "rgba(249,115,22,0.12)",
               color: "#fdba74",
-              fontSize: 18,
+              fontSize: 20,
               fontWeight: 600,
-              letterSpacing: 2,
+              letterSpacing: 2.5,
               textTransform: "uppercase",
             }}
           >
             Premium Amazon Growth Partner
           </div>
+
           <div
             style={{
-              fontSize: 76,
+              display: "flex",
+              fontSize: 82,
               fontWeight: 800,
               lineHeight: 1.05,
-              letterSpacing: -1.5,
-              maxWidth: 980,
+              letterSpacing: -1.8,
+              maxWidth: 1020,
+              color: "white",
             }}
           >
-            Scale your Amazon brand with{" "}
-            <span
-              style={{
-                background:
-                  "linear-gradient(135deg, #fde68a 0%, #f59e0b 50%, #ea580c 100%)",
-                backgroundClip: "text",
-                color: "transparent",
-              }}
-            >
-              data-driven PPC, SEO
-            </span>{" "}
-            & full account management.
+            Scale your Amazon brand with data-driven PPC, SEO & full account
+            management.
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              fontSize: 26,
+              color: "#fdba74",
+              fontWeight: 600,
+            }}
+          >
+            Profit-focused growth for serious eCommerce brands.
           </div>
         </div>
 
@@ -113,32 +156,34 @@ export default function OpenGraphImage() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            borderTop: "1px solid rgba(255,255,255,0.08)",
             paddingTop: 28,
+            borderTop: "1px solid rgba(255,255,255,0.1)",
           }}
         >
           <div
             style={{
-              fontSize: 22,
-              color: "rgba(255,255,255,0.7)",
+              display: "flex",
+              fontSize: 24,
+              color: "rgba(255,255,255,0.75)",
               fontWeight: 500,
             }}
           >
             ecombusinesssolution.com
           </div>
-          <div style={{ display: "flex", gap: 12 }}>
+          <div style={{ display: "flex", gap: 14 }}>
             {["Amazon PPC", "Listing SEO", "Seller Central", "Vendor Central"].map(
               (label) => (
                 <div
                   key={label}
                   style={{
-                    padding: "8px 16px",
+                    display: "flex",
+                    padding: "10px 18px",
                     borderRadius: 999,
                     background: "rgba(255,255,255,0.06)",
-                    border: "1px solid rgba(255,255,255,0.1)",
+                    border: "1px solid rgba(255,255,255,0.12)",
                     fontSize: 18,
                     fontWeight: 500,
-                    color: "rgba(255,255,255,0.85)",
+                    color: "rgba(255,255,255,0.88)",
                   }}
                 >
                   {label}
