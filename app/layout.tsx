@@ -92,6 +92,11 @@ const jsonLd = {
   image: `${SITE_URL}/opengraph-image`,
   email: site.email,
   sameAs: [site.facebook],
+  priceRange: "$$$",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "PK",
+  },
   areaServed: "Worldwide",
   serviceType: [
     "Amazon PPC Management",
