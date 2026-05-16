@@ -95,6 +95,9 @@ const jsonLd = {
   priceRange: "$$$",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Shah Rukn e Alam Colony",
+    addressLocality: "Multan",
+    postalCode: "60000",
     addressCountry: "PK",
   },
   areaServed: "Worldwide",
