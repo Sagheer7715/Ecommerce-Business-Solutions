@@ -8,7 +8,7 @@ export const site = {
   brandShort: "EBS",
   tagline:
     "Amazon Growth, PPC & Marketplace Management Built for Profitable Scaling",
-  email: "sagheer.sunny381@gmail.com",
+  email: "info@ecombusinesssolution.com",
   phone: "+923160972399",
   phoneDisplay: "+92 316 097 2399",
   facebook: "https://www.facebook.com/AmazonVirtualsolutions",
