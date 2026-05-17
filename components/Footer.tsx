@@ -101,6 +101,15 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href={`tel:${site.phone}`}
+                  className="hover:text-brand-300"
+                >
+                  {site.phoneDisplay}
+                </a>
+              </li>
+              <li className="text-white/60">{site.address.display}</li>
+              <li>
+                <a
                   href={site.facebook}
                   target="_blank"
                   rel="noopener noreferrer"

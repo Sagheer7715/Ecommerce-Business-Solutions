@@ -96,12 +96,18 @@ const jsonLd = {
   priceRange: "$$$",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Shah Rukn e Alam Colony",
-    addressLocality: "Multan",
-    postalCode: "60000",
-    addressCountry: "PK",
+    streetAddress: site.address.street,
+    addressLocality: site.address.city,
+    addressRegion: site.address.region,
+    postalCode: site.address.postalCode,
+    addressCountry: site.address.country,
   },
-  areaServed: "Worldwide",
+  areaServed: [
+    { "@type": "Country", name: "United States" },
+    { "@type": "Country", name: "Canada" },
+    { "@type": "Country", name: "United Kingdom" },
+    { "@type": "Country", name: "Australia" },
+  ],
   serviceType: [
     "Amazon PPC Management",
     "Amazon Account Management",

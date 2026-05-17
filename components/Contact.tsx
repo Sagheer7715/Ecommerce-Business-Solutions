@@ -2,7 +2,14 @@
 
 import { useState } from "react";
 import Reveal from "./Reveal";
-import { Mail, Facebook, CheckCircle2, ArrowRight, Phone } from "lucide-react";
+import {
+  Mail,
+  Facebook,
+  CheckCircle2,
+  ArrowRight,
+  Phone,
+  MapPin,
+} from "lucide-react";
 import { site } from "@/lib/site";
 
 const revenueOptions = [
@@ -103,6 +110,20 @@ export default function Contact() {
                   </div>
                 </div>
               </a>
+
+              <div className="card-surface flex items-center gap-4 p-4">
+                <span className="grid h-11 w-11 place-items-center rounded-xl bg-brand-gradient text-black shadow-glow">
+                  <MapPin className="h-5 w-5" />
+                </span>
+                <div>
+                  <div className="text-xs uppercase tracking-wider text-white/45">
+                    US Office
+                  </div>
+                  <div className="text-sm font-medium">
+                    {site.address.display}
+                  </div>
+                </div>
+              </div>
             </div>
           </Reveal>
 
