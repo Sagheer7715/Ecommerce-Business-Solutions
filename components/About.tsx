@@ -27,30 +27,36 @@ export default function About() {
           <Reveal className="lg:col-span-7" delay={0.1}>
             <span className="eyebrow">About</span>
             <h2 className="mt-4 font-display text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
-              A senior Amazon operator — not a freelancer with a template
+              A senior-led Amazon agency — built by operators, not account
+              managers
             </h2>
 
             <div className="mt-6 space-y-4 text-white/65">
               <p>
-                I&apos;m an Amazon Brand Manager and PPC Specialist with 8+
-                years of hands-on eCommerce experience. My focus is simple:
-                profitable, defensible growth on Amazon — built through the
-                three levers that actually move the needle on this platform:
+                <span className="text-white">
+                  Ecommerce Business Solutions
+                </span>{" "}
+                is a US-registered Amazon growth agency with 8+ years of
+                hands-on eCommerce experience across hundreds of brands. Our
+                focus is simple: profitable, defensible growth on Amazon —
+                built through the three levers that actually move the needle on
+                this platform:
                 <span className="text-white"> PPC, SEO, and conversion</span>.
               </p>
               <p>
-                I&apos;ve worked deep inside Seller Central and Vendor Central,
+                We work deep inside Seller Central and Vendor Central —
                 managing catalogs, flat files, A+ content, brand stores, and
                 everything in between. From PPC restructuring and listing
-                optimization to suppressed-listing fixes and case-log handling
-                — I treat the account like an operator would, not like a
-                spreadsheet.
+                optimization to suppressed-listing fixes and case-log handling,
+                our team treats your account the way a senior operator would,
+                not the way a spreadsheet does.
               </p>
               <p>
-                If you&apos;re a brand owner who&apos;s tired of agencies that
-                only run ads and ignore the actual fundamentals — listing
-                quality, catalog hygiene, account health — this is the kind of
-                partnership built for you.
+                If you&apos;re a brand owner tired of agencies that only run
+                ads and ignore the actual fundamentals — listing quality,
+                catalog hygiene, account health — this is the kind of
+                partnership built for you. Senior operators behind every
+                account. No junior hand-offs. No templated playbooks.
               </p>
             </div>
 
