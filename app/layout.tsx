@@ -73,6 +73,9 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+  verification: {
+    google: "Q1nOd0kRPDR9q_wJ5x49-t1OLFGzqCAXRwIbQPvATnY",
+  },
   category: "Business Services",
 };
 
