@@ -31,4 +31,5 @@ export const nav = [
   { label: "About", href: "#about" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
+  { label: "Blog", href: "/blog" },
 ];
