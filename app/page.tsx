@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import PromoVideo from "@/components/PromoVideo";
 import Metrics from "@/components/Metrics";
 import Services from "@/components/Services";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -19,6 +20,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <PromoVideo />
         <Metrics />
         <Services />
         <WhyChooseUs />
